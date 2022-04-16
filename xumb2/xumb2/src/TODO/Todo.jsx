@@ -6,7 +6,7 @@ export default function Todo({todo}) {
   return (
     <div>
         {todo.map(i=>(
-          <TodoItem key={i.id} task={i.task} cheked={i.cheked}/>
+           <TodoItem key={i.id} {...i}/>
         ))}
        
     </div>
